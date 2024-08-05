@@ -4,7 +4,7 @@
     transform: rotate(115deg);
     flex-shrink: 0;
     border-radius: 233px;
-    background: linear-gradient(180deg, #ffcc00 1.72%, rgba(0, 94, 249, 0.21) 98.78%);
+    background:  linear-gradient(180deg, rgba(248, 147, 31, 0.56)1.72%, rgba(255, 255, 255, 0.00)98.78%);
     filter: blur(150px);
     
   }
