@@ -3,11 +3,12 @@ import Link from 'next/link';
 import NavBar from '../NavBar/NavBar';
 import Image from 'next/image';
 import Gradient from '../Gradient/Gradient';
+import GradientRed from '../GradientRed/GradientRed';
 function LandingPage() {
   return (
    <div>
       <NavBar />
-      <section className='flex flex-row mx-20 gap-20 relative '>
+      <section className='flex flex-row mx-20 gap-40 relative justify-center '>
         <div className=" absolute top-[106px] left-[-212px]">
           <Gradient />
         </div>
@@ -18,13 +19,15 @@ function LandingPage() {
           <p className='font-poppins text-[64px] font-extrabold text-white'>DISFRUTA MAÑANA</p>
           <p className='text-sm text-white'>Descubre la mejor versión de ti mismo con nosotros. Ofrecemos un entorno motivador y equipos de última generación para que cada entrenamiento sea efectivo y agradable. 
             ¡Tu esfuerzo de hoy será tu orgullo de mañana!</p>
-          <button className='bg-[#F7AC59] px-8 py-2 rounded w-1/4'>Empezar</button>
+          <button className='bg-[#F7AC59] px-8 py-2 rounded w-1/4 text-white font-semibold'>Empezar</button>
         </div>
 
         <div className='flex justify-center items-center w-[30%]'>
           <Image src='/gym1.svg' alt='Landing Page' width={600} height={600} />
         </div>
-        
+        <div className=" absolute top-[186px] right-[146px]">
+          <GradientRed />
+        </div>
       </section>
   
    </div>
