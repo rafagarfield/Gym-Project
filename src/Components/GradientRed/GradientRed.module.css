@@ -5,6 +5,6 @@
     flex-shrink: 0;
     border-radius: 233px;
     background: linear-gradient(180deg, #ff00006d 1.72%, rgba(0, 94, 249, 0.21) 98.78%);
-    filter: blur(200px);
+    filter: blur(500px);
     
   }
