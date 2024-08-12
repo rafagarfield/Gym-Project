@@ -5,6 +5,8 @@ import Image from 'next/image';
 import Gradient from '../Gradient/Gradient';
 import GradientRed from '../GradientRed/GradientRed';
 import styles from "./LandingPage.module.css"
+import Program from '../Program/Program';
+import VideoComponent from '../VideoComponent/VideoComponent';
 function LandingPage() {
   return (
    <div>
@@ -30,22 +32,27 @@ function LandingPage() {
           <GradientRed />
         </div>
       </section>
+      
 
-      <section className='mx-40 my-20 relative'>
+
+      <section className='mx-36 my-20 relative flex flex-col gap-5'>
         <div className='flex flex-row items-center justify-between '>
-          <h2 className='text-white text-2xl font-semibold'>EXPLORA NUESTRO PROGRAMA</h2>
-          <div className='flex flex-row gap-9'>
-            <Image src='/ArrowCircleLeft.svg' alt='ArrowCircleLeft' width={50} height={50} />
-            <Image src='/ArrowCircleRight.svg' alt='ArrowCircleRight' width={50} height={50} />
-          </div>
+          <h2 className='text-white text-2xl font-semibold '>EXPLORA NUESTRO PROGRAMA</h2>
+          
           <div className=" absolute top-[-151px] right-[-90px]">
             <Gradient/>
           </div>
           
         </div>
+        <div className=''>
+          <Program />
+        </div>
+      </section>
+      <section>
+        <div className='my-40'>
+          <VideoComponent/> 
+        </div>
         
-
-
       </section>
   
    </div>
